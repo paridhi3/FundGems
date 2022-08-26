@@ -1,0 +1,277 @@
+<%- include("partials/header"); -%>
+
+  <!-- CAROUSEL -->
+  <div id="default-carousel" class="relative h-100" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="overflow-hidden relative h-full sm:h-64 xl:h-80 2xl:h-96">
+      <!-- Item 1 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+        data-carousel-item="active">
+        <img src="public/images/black-rain.gif"
+          class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+        <div
+          class="carousel-caption hidden md:block text-center absolute top-1/2 left-1/2 text-2xl font-medium text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-white">
+          <a href="/pepper-mill" class="hover:underline">
+            <h5 class="font-semibold">Black Rain</h5>
+            <p>The One-Touch Automatic Pepper Mill</p>
+          </a>
+          <a href="/household" class="uppercase font-semibold text-xs hover:underline" name="category">household</a>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+        data-carousel-item="">
+        <img src="public/images/moft.gif"
+          class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+        <div
+          class="carousel-caption hidden md:block text-center absolute top-1/2 left-1/2 text-2xl font-medium text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-white">
+          <a href="/moft" class="hover:underline">
+            <h5 class="font-semibold">MOFT Graphene Cooling Stand with Invisible Design</h5>
+            <p>Invisible cooling stand to help you your computer work comfortably and effectively anywhere.</p>
+          </a>
+          <a href="/phones%20&%20accessories" class="uppercase font-semibold text-xs hover:underline" name="category">phones & accessories</a>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+        data-carousel-item="">
+        <img src="public/images/tiny-pump.gif"
+          class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+        <div
+          class="carousel-caption hidden md:block text-center absolute top-1/2 left-1/2 text-2xl font-medium text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-white">
+          <a href="/tiny-pump" class="hover:underline">
+            <h5 class="font-semibold">TINY PUMP 2X: Ultimate 3-in-1 Mini Outdoor Pump</h5>
+            <p>Pocket Size| Ultra-light | Air Pump | Vacuum Pump| Camping Lantern| 4kPa Pressure| Waterproof
+            </p>
+          </a>
+          <a href="/travel%20&%20outdoors" class="uppercase font-semibold text-xs hover:underline" name="category">travel & outdoors</a>
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+        <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-slate-300" aria-current="true"
+          aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button"
+          class="w-3 h-3 rounded-full bg-white/50 dark:bg-slate-300 hover:bg-white dark:hover:bg-gray-800"
+          aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button"
+          class="w-3 h-3 rounded-full bg-white/50 dark:bg-slate-300 hover:bg-white dark:hover:bg-gray-800"
+          aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+        data-carousel-prev="">
+        <span
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="hidden">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+        data-carousel-next="">
+        <span
+          class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="hidden">Next</span>
+        </span>
+      </button>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-7 lg:px-8">
+      <div class="text-center">
+        <h1 class="text-4xl tracking-wide sm:text-5xl md:text-6xl">
+          <span class="font-poppins font-medium text-gray-900 block xl:inline-flex">Make Ideas Real with</span><br>
+          <span class="block text-fuchsia-800 xl:inline font-extrabold">FundGems</span>
+        </h1>
+        <p
+          class="m-0 text-center text-base font-medium text-gray-800 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl">
+          Explore new ways to raise fund for your ideas and make them into a reality.</p>
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          <div class="rounded-md shadow m-auto">
+            <a href="/"
+              class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-md transition duration-500 ease-in-out text-fuchsia-900 bg-white border-fuchsia-900 hover:bg-fuchsia-900 hover:text-white md:py-4 md:text-lg md:px-10">
+              Log out </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <hr class="border-dotted border-4 border-gray-300 w-1/12 border-b-0 my-10 mx-auto">
+
+    <!--POPULAR PROJECTS-->
+    <h1 class="text-center mt-10 font-bold text-2xl">Popular projects:</h1>
+
+    <div class="container w-full mt-5 mx-auto flex flex-wrap justify-center items-stretch">
+
+      <!--item-1-->
+      <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+        <a href="/dullo">
+          <img class="rounded-t-lg h-1/2 w-full" src="public/images/dullo-card.jpg" alt="">
+        </a>
+        <div class="m-5">
+          <a href="/dullo">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline">Dullo: Neck Relief Pillow for Back, Side</h5>
+          </a>
+          <p class="mb-3 font-medium text-sm text-black">Deep sleep made possible for all by our pillow's crater hole, ergonomic arches, neck support tubes.</p>
+        </div>
+        <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+          household
+        </div>
+      </div>
+
+      <!--item-2-->
+      <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+        <a href="/pepper-mill">
+          <img class="rounded-t-lg h-1/2 w-full" src="public/images/peppermill-card.jpg" alt="">
+        </a>
+        <div class="m-5">
+          <a href="/pepper-mill">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline">Black Rain: The One-Touch Automatic Pepper Mill
+            </h5>
+          </a>
+          <p class="mb-3 font-medium text-sm text-black">One Button Operation | 5 Precise Grind Settings | LED Light | Up to 8-hour Battery Life</p>
+        </div>
+        <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+          household
+        </div>
+      </div>
+
+      <!--item-3-->
+      <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+        <a href="/mealztime">
+          <img class="rounded-t-lg h-1/2 w-full" src="public/images/mealztime-card.png" alt="">
+        </a>
+        <div class="m-5">
+          <a href="/mealztime">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline">MEALZTIME - Cordless Self-heating Bento Box
+            </h5>
+          </a>
+          <p class="mb-3 font-medium text-sm text-black">One touch heating | Cordless self-heating | No water required | Reheats up to 5 meals per charge</p>
+        </div>
+        <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+          phones & accessories
+        </div>
+      </div>
+
+      <!--item-4-->
+      <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+        <a href="/moft">
+          <img class="rounded-t-lg h-1/2 w-full" src="public/images/moft-card.png" alt="">
+        </a>
+        <div class="m-5">
+          <a href="/moft">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline">MOFT Graphene Cooling Stand with Invisible Design
+            </h5>
+          </a>
+          <p class="mb-3 font-medium text-sm text-black">Invisible cooling stand to help you your computer work comfortably and effectively anywhere.</p>
+        </div>
+        <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+          phones & accessories
+        </div>
+      </div>
+
+      <!--item-5-->
+      <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+        <a href="/tiny-pump">
+          <img class="rounded-t-lg h-1/2 w-full" src="public/images/tiny-pump-card.jpg" alt="">
+        </a>
+        <div class="m-5">
+          <a href="/tiny-pump">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline">TINY PUMP 2X: Ultimate 3-in-1 Mini Outdoor Pump</h5>
+          </a>
+          <p class="mb-3 font-medium text-sm text-black">Pocket Size| Ultra-light | Air Pump | Vacuum Pump| Camping Lantern| 4kPa Pressure| Waterproof</p>
+        </div>
+        <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+          travel & outdoors
+        </div>
+      </div>
+
+      <!--item-6-->
+      <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+        <a href="/lullevibes">
+          <img class="rounded-t-lg h-1/2 w-full" src="public/images/lullevibes-card.jpg" alt="">
+        </a>
+        <div class="m-5">
+          <a href="/lullevibes">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline">LulleVibes - The Eco Travel Towel
+            </h5>
+          </a>
+          <p class="mb-3 font-medium text-sm text-black">Made from 17 recycled plastic bottles | Dries 3x faster | Light at 300g | Sand-free | Unique designs</p>
+        </div>
+        <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+          travel & outdoors
+        </div>
+      </div>
+
+    </div>
+
+    <!--BACK-THE-PROJECT-->
+    <div class="p-12 text-center relative overflow-hidden bg-no-repeat bg-cover" style="
+  background-image: url('public/images/backtheproject.jpg');
+  height: 400px;
+">
+      <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
+        <div class="flex justify-center items-center h-full">
+          <div class="text-black">
+            <h2 class="font-semibold text-4xl mb-4">Back the project, take the ride</h2>
+            <h4 class="font-medium font-sans text-xl mb-6 w-1/2 m-auto">
+              FundGems is your destination for clever innovations in tech, design, and more, often with special perks
+              and pricing for early adopters. Back a campaign, share your ideas and feedback with the project team - and
+              join the risks and rewards of bringing new products to life.
+            </h4>
+            <a class="inline-block px-7 py-3 mb-1 border-2 border-black text-black font-semibold text-sm leading-snug uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+              href="#!" role="button">Learn about crowdfunding</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--CATEGORIES-->
+    <div class="text-center mt-10 mx-auto">
+      <h2 class="font-semibold text-3xl text-black">Which categories interest you?</h2>
+      <h2 class="font-medium text-xl mt-2">Discover projects just for you or explore our top categories.</h2>
+
+      <div class="flex flex-wrap justify-around my-14 max-w-3xl mx-auto">
+
+          <div class="category transition duration-500 ease-in-out hover:bg-fuchsia-100 p-5">
+            <a href=" /household " class="text-center"><img class="h-32 w-32 mx-auto" src="public/images/household.png">
+              <h4 class="font-medium text-black uppercase pt-3"> household </h4>
+            </a>
+          </div>
+
+          <div class="category transition duration-500 ease-in-out hover:bg-fuchsia-100 p-5">
+            <a href=" /phones%20&%20accessories " class="text-center"><img class="h-32 w-32 mx-auto" src="public/images/phones & accessories.png">
+              <h4 class="font-medium text-black uppercase pt-3"> phones & accessories </h4>
+            </a>
+          </div>
+
+          <div class="category transition duration-500 ease-in-out hover:bg-fuchsia-100 p-5">
+            <a href=" /travel%20&%20outdoors " class="text-center"><img class="h-32 w-32 mx-auto" src="public/images/travel & outdoors.png">
+              <h4 class="font-medium text-black uppercase pt-3"> travel & outdoors </h4>
+            </a>
+          </div>
+        
+      </div>
+
+    </div>
+
+<%- include("partials/footer"); -%>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+<%- include("partials/header"); -%>
+
+    <!-- Jumbotron -->
+    <div class="p-12 text-center relative overflow-hidden bg-no-repeat bg-cover" style="
+    background-image: url('public/images/phone-bg.jpg');
+    height: 300px;
+  ">
+        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.4)">
+            <div class="flex justify-center items-center h-full">
+                <div class="text-white m-auto">
+                    <h2 class="font-medium text-6xl mb-4">Phones & Accessories</h2>
+                    <h4 class="font-normal text-3xl mb-6">Products for staying connected</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Jumbotron -->
+
+    <div class="container w-full mt-5 mx-auto flex flex-wrap justify-center items-stretch">
+
+      <% foundProjects.forEach(function(project) { %>
+
+        <div class="max-w-xs max-h-96 m-10 bg-white rounded-lg border border-gray-200 shadow-md">
+          <a href="/<%= project.name %>">
+            <img class="rounded-t-lg h-1/2 w-full" src="public/images/<%= project.image %>.png" alt="">
+          </a>
+          <div class="m-5">
+            <a href="/<%= project.name %>">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 hover:underline"><%= project.title %>
+              </h5>
+            </a>
+            <p class="mb-3 font-medium text-sm text-black"><%= project.subtitle %></p>
+          </div>
+          <div class="uppercase absolute text-gray-400 ml-5 font-semibold text-xs">
+            <%= project.category %>
+          </div>
+        </div>
+
+      <% }) %>
+
+    </div> 
+
+    <%- include("partials/footer"); -%>
